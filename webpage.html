@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ccccccccccccccc">
+    <meta name="keywords" content="html css js">
     <title>webpage</title>
+    <!--open graph tags-->
+    <meta property="og:title" content="Your Website Name">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://example.com/images/gallery-preview.jpg">
+    <meta property="og:url" content="https://example.com/responsive-gallery">
+    <meta property="og:type" content="website">
+    <!-- twitter cerd -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=" Your Website Name">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https://example.com/images/gallery-preview.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta name="twitter:creator" content="@YourTwitterHandle">
 </head>
 <body>
     <h1>HTML Tutorial</h1>
-    <img src="C:\Users\Yara\Desktop\HTML_Tutorial\images\images.jfif" alt="html image" width="250px" height="200px">
+    <img src="images\images.jfif" alt="html image" width="250px" height="200px">
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum placeat. Quisquam odit beatae assumenda nostrum molestiae voluptate quo esse!</p>
     <hr>
     <p>Ordered & Unordered List</p>
@@ -25,32 +40,101 @@
     <hr>
         <table border="1">
             <tr>
-            <th>Programing languages</th>
-            
-            <td>CSS</td>
-            <td>HTML</td>
-            <td>JS</td>
+            <th rowspan="2">Programing languages</th>
+            <th colspan="3">Frontend</th>
+            <th colspan="3">Backend</th>
         </tr>
         <tr>
-            <th>Abbreviation</th>
-            <td>CSS</td>
-            <td>HTML</td>
-            <td>JS</td>
+            <td colspan="2">html</td>
+            <td colspan="2">php</td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">css</td>
+            <td colspan="2">python</td>
+        </tr>
+        <tr>
+            <!--<td rowspan="2"></td>-->
+            <td colspan="2">js</td>
+            <td colspan="2">not js</td>
         </tr>
         </table>
     <hr>
     <a href="index.html">Home page</a>
     <hr>
     <form action="#">
+        <fieldset>
+        <legend>Personal information</legend>
+       <div>
         <label for="name">User name</label>
-        <input type="text" name="user_name" id="name" value="User name"><br><br>
+        <input type="text" name="user_name" id="name" required  maxlength="50" minlength="8" placeholder="Enter user name"><br>
+       
+    </div>
+        <div>
         <label for="email">Email</label>
-        <input type="email" name="mail" id="email" value="email"><br><br>
-        <label for="message">Message</label>
-        <textarea></textarea><br><br>
-        <input type="button" value="send">
+        <input type="email" name="mail" id="email"  required  placeholder="Enter email"><br>
+       
+    </div>
+        <div>
+        <label for="message" maxlength="100" minlength="20" >Message</label>
+        <textarea></textarea><br>
+        
+    </div>
+        <div>
+        <input type="button" value="send"></div><br>
+    </fieldset>
     </form>
     <hr>
+    <video controls muted  loop preload="none" width="250" height="200" poster="images/images.jfif" >
+        <source src="images/natural.mp4" type="video/mp4" >
+        <track src="translate.vtt" label="English" srclang="en" kind="subtitles" default>
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <audio controls muted loop preload="auto" >
+        <source src="images/sinup.mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    <div style="flex-wrap: wrap;">
+        <h2 style="text-align: center;">Responsive Image Gallery</h2>
+        <figure>
+            <img src="images/gallery/pexels-danny-meneses-340146-943096.jpg" alt="image1" width="250" height="200">
+            <figcaption>image1</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/pexels-kevin-ku-92347-577585.jpg" alt="image2" width="250" height="200">
+            <figcaption>image2</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/pexels-pixabay-270366.jpg" alt="image3" width="250" height="200">
+            <figcaption>image3</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/pexels-danny-meneses-340146-943096.jpg" alt="image1" width="250" height="200">
+            <figcaption>image1</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/pexels-kevin-ku-92347-577585.jpg" alt="image2" width="250" height="200">
+            <figcaption>image2</figcaption>
+        </figure>
+        <figure>
+            <img src="images/gallery/pexels-pixabay-270366.jpg" alt="image3" width="250" height="200">
+            <figcaption>image3</figcaption>
+        </figure>
 
+    </div>
+    <hr>
+          <h3>Summary</h3>
+        
+            <details>
+                <summary>HTML (Hypertext Markup Language)</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit adipisci cumque quos similique laborum illo quasi nisi dolore atque?</p>
+            </details>
+            <hr>
+            <h1>SVG in HTML</h1>
+                <svg width="100" height="100" xmlns="im">
+                
+                </svg>
+                <img src="images/SVG icons/burger-1-svgrepo-com.svg" alt="" width="20" height="20">
 </body>
 </html>
