@@ -1,0 +1,18 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.figure{
+    border: 1px solid black;
+    flex:1px;
+
+}
+.gallery image{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
