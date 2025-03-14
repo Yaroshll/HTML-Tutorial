@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openbar(){
+            document.getElementById('main').style.marginLeft="250px";
+            document.getElementById('mysidebar').style.width="250px";
+        }
+
+        function closebar(){
+            document.getElementById('main').style.marginLeft="0px";
+            document.getElementById('mysidebar').style.width="0px";
+        }
+
+    </script>
 </head>
 <body>
     <header><h1>Website</h1></header>
+    <nav>
+    <div class="sidebar" id="mysidebar">
+        <a href="javascript:void(0)" onclick="closebar()" id="closebtn">&times;</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">contact</a>
+        <a href="#section">section</a>
 
-    <nav><a href="/about.html">AboutUs</a>
-    <a href="#">Contact</a>
-    <a href="#">Services</a></nav>
+    </div></nav>
+    <div id="main">
+        <button  id="openbtn" onclick="openbar()">&#9776</button>
+        <h2>Collapsible Sidebar Menu</h2>
+        
+    </div>
+    <iframe src="https://youtu.be/WfQKVwUn3PU?si=pJk2bxCK-uMtP3fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+
 
     
 </body>

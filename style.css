@@ -39,6 +39,8 @@
 .footer {
     text-align: center;
     margin-top: auto;
+    position:sticky;
+    bottom: 0px;
 }
 .team-img {
     width: 100px;
@@ -57,6 +59,11 @@
     display: grid;
     grid-auto-flow: column;
     gap: 10px;
+    position:sticky;
+    top:0px;
+    right: 10px;
+    border: 1px solid black;
+    margin:5px;
 }
 .nav a{
     
@@ -64,8 +71,45 @@
     text-decoration: none;
     /* text-align: center; */
     text-decoration-color: bisque;
+    margin: auto;
 }
 .nav a:hover{
     text-decoration: underline;
     text-decoration-color: blueviolet;
 }
+.sidebar{
+    background-color: rgb(203, 230, 231);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x:hidden;
+}
+.sidebar a{
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+a #closebtn{
+    font-size: medium;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50;
+    cursor: pointer;
+}
+#openbtn{
+    font-size: medium;
+    position: absolute;
+    top: 0;
+    left: 25;
+    cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
